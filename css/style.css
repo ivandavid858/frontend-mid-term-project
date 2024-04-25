@@ -136,13 +136,13 @@ a:-webkit-any-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 0;
 }
 
 .project {
-    max-width: 300px;
+    max-width: 260px;
     background-color: white;
     margin: 20px 0;
+    padding-bottom: 10px;
 }
 
 .project-img {
