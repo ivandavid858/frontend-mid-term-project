@@ -110,20 +110,19 @@ a:-webkit-any-link {
 }
 
 .logos-section {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
+    margin: 30px 120px;
 }
 
 .logos-list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     filter: grayscale(100%);
-    margin-top: 25px;
-}
-
-.logos-list li {
-    margin-left: 20px;
-    margin-right: 20px;
 }
