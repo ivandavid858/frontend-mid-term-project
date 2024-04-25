@@ -1,4 +1,129 @@
+*, html, body {
+    box-sizing: border-box; /*la caja del style que muestra margin, padding, border, content....*/
+    margin:  0px; /*Para evitar margin por defecto*/
+    padding: 0px; /*Para evitar padding por defecto*/
+}
 
-h2 {
-    color: blue;
+:root {
+    --grey-default: #6B708D;
+    --blue-default: #072AC8;
+    --dark-default: #292E47;
+}
+
+a:-webkit-any-link{
+    color: var(--grey-default);
+    text-decoration: none;
+}
+
+nav > ul > li:first-child > a {
+    color: var(--blue-default);
+}
+
+body {
+    background-color: #f2f4fc; /*Color de fondo de la pagina web, body es el elemento mas grande de la pagina*/
+}
+
+header {
+    display: flex;
+    text-align: center;
+    margin: 30px 120px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-shadow: 0px 4px 3.5px rgba(0, 0, 0, 0.2);
+}
+
+header img[src="../sources/logos/circle.svg"] {
+    filter: drop-shadow(0px 5px 3.5px rgba(0, 0, 0, 0.2));
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+button {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px;
+}
+
+.hero-left {
+    width: 45%;
+    max-height: 100%;
+    font-family: serif;
+    font-weight: 480;
+}
+
+a:-webkit-any-link {
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.hero-text-1 {
+    font-weight: bold;
+    color:var(--dark-default);
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.hero-text-2 {
+    color: var(--grey-default);
+    font-size: 16px;
+    margin: 25px 0px;
+}
+
+.hero-right {
+    position: relative;
+    overflow: hidden; /*para evitar que las imágenes sobresalgan del contenedor*/
+    width: 55%;
+    max-height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-card-1 {
+    position: absolute;
+    width: 64%;
+    height: auto;
+    top: -2%;
+    left: -16%;
+}
+
+.hero-card-2 {
+    position: absolute;
+    width: 61%;
+    height: auto;
+    bottom: -18.3%;
+    right: -13.8%;
+}
+
+.logos-section {
+    width: 100%;
+    height: 100px;
+}
+
+.logos-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    filter: grayscale(100%);
+    margin-top: 25px;
+}
+
+.logos-list li {
+    margin-left: 20px;
+    margin-right: 20px;
 }
